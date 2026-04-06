@@ -1,6 +1,9 @@
 const fs = require('fs');
 const path = require('path');
 
+const ONLINE_URL = process.env.ONLINE_URL || 'https://longcoderx.github.io/coding-plan-page/';
+const FOOTER = process.env.FOOTER || '由 LongCoderX 维护';
+
 // 读取数据文件
 const configPath = path.join(__dirname, '../config.json');
 const plansPath = path.join(__dirname, '../plans.json');
