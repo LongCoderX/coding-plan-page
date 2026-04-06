@@ -11,34 +11,10 @@ const plansPath = path.join(__dirname, '../plans.json');
 const config = JSON.parse(fs.readFileSync(configPath, 'utf8'));
 const plans = JSON.parse(fs.readFileSync(plansPath, 'utf8'));
 
-// 生成星星
-function generateStars(rating) {
-    return '⭐️'.repeat(rating);
-}
-
-// 生成平台推荐
-function generateRecommendations(recommendations) {
-    let md = '';
-    recommendations.forEach((rec, index) => {
-        md += `${index + 1}. ${rec.name} ${generateStars(rec.rating)}\n`;
-        rec.reasons.forEach(reason => {
-            md += `    - ${reason}\n`;
-        });
-    });
-    return md;
-}
-
-// 生成评分说明
-function generateRatingGuide(ratingGuide) {
-    if (!ratingGuide) return '';
-    return `\n**评分标准**: ${ratingGuide}\n`;
-}
-
 // 格式化价格
 function formatPrice(price) {
     if (price === '-') return '-';
     if (typeof price === 'number') {
-        // 整数显示为 ¥7.9，小数显示为 ¥7.90
         return `¥${price}`;
     }
     return price;
@@ -61,7 +37,6 @@ function formatStrikethrough(price, originalPrice) {
 // 清理表格单元格内容（移除换行符，防止破坏表格格式）
 function escapeTableCell(text) {
     if (!text) return '-';
-    // 将换行符替换为空格
     return String(text).replace(/\n/g, ' ').trim() || '-';
 }
 
@@ -71,22 +46,58 @@ function getOriginalPrice(currentPrice, multiplier) {
     return currentPrice * multiplier;
 }
 
+// 生成平台客观对比表
+function generatePlatformInfo(platformInfo) {
+    if (!platformInfo || !platformInfo.platforms) return '';
+
+    const dims = platformInfo.dimensions || [];
+    const platforms = platformInfo.platforms || [];
+
+    let md = `## 平台客观对比维度\n\n`;
+    md += `以下对比基于各平台公开信息和用户反馈，仅供参考。\n\n`;
+
+    // 表头
+    md += `| 平台 |`;
+    dims.forEach(dim => {
+        md += ` ${dim.name} |`;
+    });
+    md += `\n`;
+
+    // 分隔线
+    md += `|------|`;
+    dims.forEach(() => {
+        md += `------|`;
+    });
+    md += `\n`;
+
+    // 数据行
+    platforms.forEach(platform => {
+        md += `| ${platform.name} |`;
+        md += ` ${platform.priceLevel} |`;
+        md += ` ${platform.purchaseDifficulty} |`;
+        md += ` ${platform.stability} |`;
+        md += ` ${platform.codingAbility} |`;
+        md += ` ${platform.textAbility} |`;
+        md += `\n`;
+    });
+
+    return md + '\n';
+}
+
 // 生成套餐对比表
 function generateTable(plans) {
-    let md = '| 平台 | 套餐 | 链接 | 首月价格 | 连续包月 | 连续包季 | 连续包年 | 支持模型 | 5小时请求数 | 每周请求数 | 每月总请求数 | 其他权益 | 备注 |\n';
-    md += '|------|------|---------|---------|---------|---------|---------|---------|-----------|-----------|-----------|---------|------|\n';
-    
+    let md = `| 平台 | 套餐 | 链接 | 首月价格 | 连续包月 | 连续包季 | 连续包年 | 支持模型 | 5小时请求数 | 每周请求数 | 每月总请求数 | 其他权益 | 备注 |\n`;
+    md += `|------|------|---------|---------|---------|---------|---------|---------|-----------|-----------|-----------|---------|------|\n`;
+
     plans.forEach(plan => {
         const vendor = plan.vendor;
         const planName = plan.plan;
         const link = `[跳转](${plan.action})`;
         const firstMonth = formatPrice(plan.firstMonthPrice);
         const monthly = formatPrice(plan.monthlyPrice);
-        // 包季：有值时加 " / 季"
-        const quarterly = plan.quarterlyPrice !== '-' 
+        const quarterly = plan.quarterlyPrice !== '-'
             ? formatStrikethrough(plan.quarterlyPrice, getOriginalPrice(plan.monthlyPrice, 3)) + ' / 季'
             : '- / 季';
-        // 包年：有值时加 " / 年"
         const yearly = plan.yearlyPrice !== '-'
             ? formatStrikethrough(plan.yearlyPrice, getOriginalPrice(plan.monthlyPrice, 12)) + ' / 年'
             : '- / 年';
@@ -99,14 +110,15 @@ function generateTable(plans) {
 
         md += `| ${vendor} | ${planName} | ${link} | ${firstMonth} | ${monthly} | ${quarterly} | ${yearly} | ${models} | ${fiveHoursRequests} | ${weeklyRequests} | ${monthlyRequests} | ${benefits} | ${note} |\n`;
     });
-    
+
     return md;
 }
 
 // 生成完整 README
 function generateReadme() {
-    const { recommendations, notes } = config;
-    
+    const { notes } = config;
+    const platformInfo = config.platformInfo;
+
     let md = `# AI Coding Plan 对比工具
 
 ## 📖 简介
@@ -120,10 +132,7 @@ ${config.header.models}
 直接访问：[${ONLINE_URL}](${ONLINE_URL})
 
 
-## 平台推荐
-
-${generateRecommendations(recommendations)}${generateRatingGuide(config.ratingGuide)}
-
+${generatePlatformInfo(platformInfo)}
 ## 📋 套餐对比表
 
 ${generateTable(plans)}
@@ -147,11 +156,11 @@ ${notes.map(n => `- ${n}`).join('\n')}
 // 主函数
 function main() {
     const readme = generateReadme();
-    
+
     // 直接输出到 README.md
     const outputPath = path.join(__dirname, '../README.md');
     fs.writeFileSync(outputPath, readme, 'utf8');
-    
+
     console.log('README.md 已生成');
 }
 

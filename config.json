@@ -2,72 +2,140 @@
   "header": {
     "title": "AI Coding Plan 对比",
     "subtitle": "十二大平台 智谱AI、Kimi、MiniMax、小米·MiMo、字节·方舟、阿里·百炼、百度·千帆、腾讯云、京东云、摩尔线程、快手·KwaiKAT、无问芯穹，全面对比",
-    "models": "支持Qwen-3.5，Doubao-Seed-2.0，MiniMax-M2.7，MiniMax-M2.5，GLM-5.1，GLM-5，GLM-4.7，MiMo-V2-Pro，Kimi-K2.5，KAT-Coder-Pro V1，DeepSeek-V3.2等模型",
+    "models": "支持Qwen-3.5，Doubao-Seed-2.0，MiniMax-M2.7、MiniMax-M2.5，GLM-5.1、GLM-5、GLM-4.7，MiMo-V2-Pro，Kimi-K2.5，KAT-Coder-Pro V1，DeepSeek-V3.2等模型",
     "github": {
       "url": "https://github.com/LongCoderX/coding-plan-page",
       "text": "GitHub"
     }
   },
-  "recommendations": [
-    {
-      "name": "智谱AI",
-      "rating": 5,
-      "reasons": [
-        "独占GLM5.1模型。+1",
-        "提供免费MCP次数。+1"
-      ]
-    },
-    {
-      "name": "MiniMax",
-      "rating": 5,
-      "reasons": [
-        "价格最便宜，且无需抢购。+1",
-        "独占MiniMax-M2.7模型。+1"
-      ]
-    },
-    {
-      "name": "字节·方舟",
-      "rating": 4,
-      "reasons": [
-        "独占Doubao-Seed-2.0系列模型。+1",
-        "不支持GLM-5，只支持GLM-4.7。-1",
-        "赠送真OpenClaw。+1"
-      ]
-    },
-    {
-      "name": "阿里·百炼",
-      "rating": 3,
-      "reasons": [
-        "独占Qwen3.5系列模型。+1",
-        "只有pro套餐，轻量使用性价比不高。-1"
-      ]
-    },
-    {
-      "name": "小米·MiMo",
-      "rating": 3,
-      "reasons": [
-        "独占Mimo模型。+1",
-        "按Token计费，性价比略低。-1"
-      ]
-    },
-    {
-      "name": "无问芯穹",
-      "rating": 4,
-      "reasons": [
-        "聚合多厂商模型，一份订阅多模型。+1",
-        "首月仅¥19.9，性价比高。+1"
-      ]
-    },
-    {
-      "name": "摩尔线程",
-      "rating": 3,
-      "reasons": [
-        "国产GPU算力底座，全栈国产化。+1",
-        "仅支持季度付费，资金占用高。-1"
-      ]
-    }
-  ],
-  "ratingGuide": "基准3颗星，价格优势劣势1分，模型优势或独占模型1分，其他优势1分",
+  "platformInfo": {
+    "description": "平台客观对比维度",
+    "dimensions": [
+      {
+        "key": "priceLevel",
+        "name": "价格",
+        "desc": "套餐价格水平（相对高低）"
+      },
+      {
+        "key": "purchaseDifficulty",
+        "name": "购买难度",
+        "desc": "是否需要抢购或限量购买"
+      },
+      {
+        "key": "stability",
+        "name": "稳定性",
+        "desc": "服务稳定性表现"
+      },
+      {
+        "key": "codingAbility",
+        "name": "编程能力",
+        "desc": "代码生成、调试、解释等能力"
+      },
+      {
+        "key": "textAbility",
+        "name": "文本能力",
+        "desc": "文案、对话、总结等文本处理能力"
+      }
+    ],
+    "platforms": [
+      {
+        "name": "智谱AI",
+        "priceLevel": "中",
+        "purchaseDifficulty": "无需抢购",
+        "stability": "稳定",
+        "codingAbility": "强（GLM-5编程能力强）",
+        "textAbility": "强（GLM系列文本能力强）"
+      },
+      {
+        "name": "MiniMax",
+        "priceLevel": "低",
+        "purchaseDifficulty": "无需抢购",
+        "stability": "稳定",
+        "codingAbility": "中（M2.7编程能力强）",
+        "textAbility": "中"
+      },
+      {
+        "name": "字节·方舟",
+        "priceLevel": "中",
+        "purchaseDifficulty": "Pro限量发售",
+        "stability": "稳定",
+        "codingAbility": "强（Doubao-Seed-2.0）",
+        "textAbility": "强"
+      },
+      {
+        "name": "阿里·百炼",
+        "priceLevel": "中",
+        "purchaseDifficulty": "Pro限量发售",
+        "stability": "稳定",
+        "codingAbility": "强（Qwen-3.5编程能力强）",
+        "textAbility": "强（Qwen系列文本能力强）"
+      },
+      {
+        "name": "小米·MiMo",
+        "priceLevel": "中",
+        "purchaseDifficulty": "无需抢购",
+        "stability": "稳定",
+        "codingAbility": "中",
+        "textAbility": "中"
+      },
+      {
+        "name": "无问芯穹",
+        "priceLevel": "低",
+        "purchaseDifficulty": "无需抢购",
+        "stability": "稳定",
+        "codingAbility": "中（聚合多模型）",
+        "textAbility": "中（聚合多模型）"
+      },
+      {
+        "name": "摩尔线程",
+        "priceLevel": "中",
+        "purchaseDifficulty": "无轻量套餐",
+        "stability": "稳定",
+        "codingAbility": "中",
+        "textAbility": "中"
+      },
+      {
+        "name": "Kimi",
+        "priceLevel": "高",
+        "purchaseDifficulty": "无需抢购",
+        "stability": "稳定",
+        "codingAbility": "强（Kimi-K2.5编程能力强）",
+        "textAbility": "强"
+      },
+      {
+        "name": "腾讯云",
+        "priceLevel": "中",
+        "purchaseDifficulty": "Lite/Pro限量",
+        "stability": "稳定",
+        "codingAbility": "中",
+        "textAbility": "中"
+      },
+      {
+        "name": "京东云",
+        "priceLevel": "中",
+        "purchaseDifficulty": "有首月优惠",
+        "stability": "稳定",
+        "codingAbility": "中",
+        "textAbility": "中"
+      },
+      {
+        "name": "百度·千帆",
+        "priceLevel": "中",
+        "purchaseDifficulty": "无轻量套餐",
+        "stability": "稳定",
+        "codingAbility": "中",
+        "textAbility": "强（支持百度搜索增强）"
+      },
+      {
+        "name": "快手·KwaiKAT",
+        "priceLevel": "中",
+        "purchaseDifficulty": "限时特惠",
+        "stability": "稳定",
+        "codingAbility": "中",
+        "textAbility": "中"
+      }
+    ]
+  },
   "notes": [
     "包季/包年价格中的划线数字表示原始价格（包月×3 或 包月×12），未划线的为实际优惠价格。",
     "本页面的跳转链接包含各平台官方邀请码，这是平台官方公开的推广返利活动，任何人注册账号后均可获取自己的邀请码。使用邀请码订阅可享平台专属优惠（如折扣、赠金等），同时也支持本站继续运营。",
