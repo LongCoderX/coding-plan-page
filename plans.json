@@ -1,0 +1,753 @@
+[
+  {
+    "vendor": "智谱AI",
+    "plan": "Lite",
+    "action": "https://www.bigmodel.cn/glm-coding?ic=FNRBWMNAOM",
+    "firstMonthPrice": "-",
+    "monthlyPrice": 49,
+    "quarterlyPrice": 132.3,
+    "yearlyPrice": 470.4,
+    "models": [
+      "GLM-5.1"
+    ],
+    "fiveHoursRequests": 1200,
+    "weeklyRequests": 6000,
+    "monthlyRequests": 24000,
+    "benefits": [
+      "免费MCP次数"
+    ],
+    "note": "• 3倍Claude Pro用量。官方以prompt计数，这里按1 prompt≈15次请求换算\n• 官方只有周限量无月限量，这里按照1月=4周计算"
+  },
+  {
+    "vendor": "智谱AI",
+    "plan": "Pro",
+    "action": "https://www.bigmodel.cn/glm-coding?ic=FNRBWMNAOM",
+    "firstMonthPrice": "-",
+    "monthlyPrice": 149,
+    "quarterlyPrice": 402.3,
+    "yearlyPrice": 1430.4,
+    "models": [
+      "GLM-5.1",
+      "GLM-5"
+    ],
+    "fiveHoursRequests": 6000,
+    "weeklyRequests": 30000,
+    "monthlyRequests": 120000,
+    "benefits": [
+      "免费MCP次数"
+    ],
+    "note": "• 5倍Lite用量。官方以prompt计数，这里按1 prompt≈15次请求换算\n• 官方只有周限量无月限量，这里按照1月=4周计算"
+  },
+  {
+    "vendor": "智谱AI",
+    "plan": "Max",
+    "action": "https://www.bigmodel.cn/glm-coding?ic=FNRBWMNAOM",
+    "firstMonthPrice": "-",
+    "monthlyPrice": 469,
+    "quarterlyPrice": 1266.3,
+    "yearlyPrice": 4502.4,
+    "models": [
+      "GLM-5.1",
+      "GLM-5"
+    ],
+    "fiveHoursRequests": 24000,
+    "weeklyRequests": 120000,
+    "monthlyRequests": 480000,
+    "benefits": [
+      "免费MCP次数"
+    ],
+    "note": "• 20倍Lite用量。官方以prompt计数，这里按1 prompt≈15次请求换算\n• 官方只有周限量无月限量，这里按照1月=4周计算"
+  },
+  {
+    "vendor": "MiniMax",
+    "plan": "Starter",
+    "action": "https://platform.minimaxi.com/subscribe/token-plan?code=3mfXUyqNGv&source=link",
+    "firstMonthPrice": "-",
+    "monthlyPrice": 29,
+    "quarterlyPrice": "-",
+    "yearlyPrice": 290,
+    "models": [
+      "MiniMax-M2.7",
+      "MiniMax-M2.5"
+    ],
+    "fiveHoursRequests": 600,
+    "weeklyRequests": 6000,
+    "monthlyRequests": 24000,
+    "benefits": [],
+    "note": "约50TPS\n• 官方只有周限量无月限量，这里按照1月=4周计算"
+  },
+  {
+    "vendor": "MiniMax",
+    "plan": "Plus",
+    "action": "https://platform.minimaxi.com/subscribe/token-plan?code=3mfXUyqNGv&source=link",
+    "firstMonthPrice": "-",
+    "monthlyPrice": 49,
+    "quarterlyPrice": "-",
+    "yearlyPrice": 490,
+    "models": [
+      "MiniMax-M2.7",
+      "MiniMax-M2.5"
+    ],
+    "fiveHoursRequests": 1500,
+    "weeklyRequests": 15000,
+    "monthlyRequests": 60000,
+    "benefits": [],
+    "note": "约50TPS\n• 官方只有周限量无月限量，这里按照1月=4周计算"
+  },
+  {
+    "vendor": "MiniMax",
+    "plan": "Max",
+    "action": "https://platform.minimaxi.com/subscribe/token-plan?code=3mfXUyqNGv&source=link",
+    "firstMonthPrice": "-",
+    "monthlyPrice": 119,
+    "quarterlyPrice": "-",
+    "yearlyPrice": 1190,
+    "models": [
+      "MiniMax-M2.7",
+      "MiniMax-M2.5"
+    ],
+    "fiveHoursRequests": 4500,
+    "weeklyRequests": 45000,
+    "monthlyRequests": 180000,
+    "benefits": [],
+    "note": "约50TPS\n• 官方只有周限量无月限量，这里按照1月=4周计算"
+  },
+  {
+    "vendor": "MiniMax",
+    "plan": "Plus-极速",
+    "action": "https://platform.minimaxi.com/subscribe/token-plan?code=3mfXUyqNGv&source=link",
+    "firstMonthPrice": "-",
+    "monthlyPrice": 98,
+    "quarterlyPrice": "-",
+    "yearlyPrice": 980,
+    "models": [
+      "MiniMax-M2.7",
+      "MiniMax-M2.5"
+    ],
+    "fiveHoursRequests": 1500,
+    "weeklyRequests": 15000,
+    "monthlyRequests": 60000,
+    "benefits": [],
+    "note": "约100TPS\n• 官方只有周限量无月限量，这里按照1月=4周计算"
+  },
+  {
+    "vendor": "MiniMax",
+    "plan": "Max-极速",
+    "action": "https://platform.minimaxi.com/subscribe/token-plan?code=3mfXUyqNGv&source=link",
+    "firstMonthPrice": "-",
+    "monthlyPrice": 199,
+    "quarterlyPrice": "-",
+    "yearlyPrice": 1990,
+    "models": [
+      "MiniMax-M2.7",
+      "MiniMax-M2.5"
+    ],
+    "fiveHoursRequests": 4500,
+    "weeklyRequests": 45000,
+    "monthlyRequests": 180000,
+    "benefits": [],
+    "note": "约100TPS\n• 官方只有周限量无月限量，这里按照1月=4周计算"
+  },
+  {
+    "vendor": "字节·方舟",
+    "plan": "Lite",
+    "action": "https://volcengine.com/L/DfEH3_AUHEI/",
+    "firstMonthPrice": "-",
+    "monthlyPrice": 40,
+    "quarterlyPrice": "-",
+    "yearlyPrice": "-",
+    "models": [
+      "Doubao-Seed-2.0",
+      "MiniMax-M2.5",
+      "Kimi-K2.5",
+      "GLM-4.7",
+      "DeepSeek-V3.2"
+    ],
+    "fiveHoursRequests": 1200,
+    "weeklyRequests": 9000,
+    "monthlyRequests": 18000,
+    "benefits": [
+      "ArkClaw 7天体验"
+    ],
+    "note": ""
+  },
+  {
+    "vendor": "字节·方舟",
+    "plan": "Pro",
+    "action": "https://volcengine.com/L/DfEH3_AUHEI/",
+    "firstMonthPrice": "-",
+    "monthlyPrice": 200,
+    "quarterlyPrice": "-",
+    "yearlyPrice": "-",
+    "models": [
+      "Doubao-Seed-2.0",
+      "MiniMax-M2.5",
+      "Kimi-K2.5",
+      "GLM-4.7",
+      "DeepSeek-V3.2"
+    ],
+    "fiveHoursRequests": 6000,
+    "weeklyRequests": 45000,
+    "monthlyRequests": 90000,
+    "benefits": [
+      "免费ArkClaw"
+    ],
+    "note": ""
+  },
+  {
+    "vendor": "阿里·百炼",
+    "plan": "Pro",
+    "action": "https://www.aliyun.com/benefit/scene/codingplan",
+    "firstMonthPrice": "-",
+    "monthlyPrice": 200,
+    "quarterlyPrice": "-",
+    "yearlyPrice": "-",
+    "models": [
+      "Qwen-3.5",
+      "MiniMax-M2.5",
+      "GLM-5",
+      "Kimi-K2.5"
+    ],
+    "fiveHoursRequests": 6000,
+    "weeklyRequests": 45000,
+    "monthlyRequests": 90000,
+    "benefits": [],
+    "note": ""
+  },
+  {
+    "vendor": "小米·MiMo",
+    "plan": "Lite",
+    "action": "https://mimo.mi.com/",
+    "firstMonthPrice": 34.32,
+    "monthlyPrice": 39,
+    "quarterlyPrice": "-",
+    "yearlyPrice": "-",
+    "models": [
+      "MiMo-V2-Pro",
+      "MiMo-V2-Omni",
+      "MiMo-V2-TTS"
+    ],
+    "fiveHoursRequests": "无限制",
+    "weeklyRequests": "无限制",
+    "monthlyRequests": "无限制",
+    "benefits": [
+      "TTS限时免费"
+    ],
+    "note": "• 60M(6000万) Credits，无5小时限额，支持集中消耗\n• 倍率 MiMo-V2-Omni:1x, Pro 256k:2x, Pro 1M:4x"
+  },
+  {
+    "vendor": "小米·MiMo",
+    "plan": "Standard",
+    "action": "https://mimo.mi.com/",
+    "firstMonthPrice": 87.12,
+    "monthlyPrice": 99,
+    "quarterlyPrice": "-",
+    "yearlyPrice": "-",
+    "models": [
+      "MiMo-V2-Pro",
+      "MiMo-V2-Omni",
+      "MiMo-V2-TTS"
+    ],
+    "fiveHoursRequests": "无限制",
+    "weeklyRequests": "无限制",
+    "monthlyRequests": "无限制",
+    "benefits": [
+      "TTS限时免费"
+    ],
+    "note": "• 200M(2亿) Credits，无5小时限额，支持集中消耗\n• 倍率 MiMo-V2-Omni:1x, Pro 256k:2x, Pro 1M:4x"
+  },
+  {
+    "vendor": "小米·MiMo",
+    "plan": "Pro",
+    "action": "https://mimo.mi.com/",
+    "firstMonthPrice": 289.52,
+    "monthlyPrice": 329,
+    "quarterlyPrice": "-",
+    "yearlyPrice": "-",
+    "models": [
+      "MiMo-V2-Pro",
+      "MiMo-V2-Omni",
+      "MiMo-V2-TTS"
+    ],
+    "fiveHoursRequests": "无限制",
+    "weeklyRequests": "无限制",
+    "monthlyRequests": "无限制",
+    "benefits": [
+      "TTS限时免费"
+    ],
+    "note": "• 700M(7亿) Credits，无5小时限额，支持集中消耗\n• 倍率 MiMo-V2-Omni:1x, Pro 256k:2x, Pro 1M:4x"
+  },
+  {
+    "vendor": "小米·MiMo",
+    "plan": "Max",
+    "action": "https://mimo.mi.com/",
+    "firstMonthPrice": 579.92,
+    "monthlyPrice": 659,
+    "quarterlyPrice": "-",
+    "yearlyPrice": "-",
+    "models": [
+      "MiMo-V2-Pro",
+      "MiMo-V2-Omni",
+      "MiMo-V2-TTS"
+    ],
+    "fiveHoursRequests": "无限制",
+    "weeklyRequests": "无限制",
+    "monthlyRequests": "无限制",
+    "benefits": [
+      "TTS限时免费"
+    ],
+    "note": "• 1600M(16亿) Credits，无5小时限额，支持集中消耗\n• 倍率 MiMo-V2-Omni:1x, Pro 256k:2x, Pro 1M:4x"
+  },
+  {
+    "vendor": "腾讯云",
+    "plan": "Lite",
+    "action": "https://cloud.tencent.com/act/pro/codingplan#buy",
+    "firstMonthPrice": 7.9,
+    "monthlyPrice": 40,
+    "quarterlyPrice": "-",
+    "yearlyPrice": "-",
+    "models": [
+      "HY-2.0",
+      "HY-T1",
+      "GLM-5",
+      "Kimi-K2.5",
+      "MiniMax-M2.5"
+    ],
+    "fiveHoursRequests": 1200,
+    "weeklyRequests": 9000,
+    "monthlyRequests": 18000,
+    "benefits": [],
+    "note": ""
+  },
+  {
+    "vendor": "腾讯云",
+    "plan": "Pro",
+    "action": "https://cloud.tencent.com/act/pro/codingplan#buy",
+    "firstMonthPrice": 39.9,
+    "monthlyPrice": 200,
+    "quarterlyPrice": "-",
+    "yearlyPrice": "-",
+    "models": [
+      "HY-2.0",
+      "HY-T1",
+      "GLM-5",
+      "Kimi-K2.5",
+      "MiniMax-M2.5"
+    ],
+    "fiveHoursRequests": 6000,
+    "weeklyRequests": 45000,
+    "monthlyRequests": 90000,
+    "benefits": [],
+    "note": ""
+  },
+  {
+    "vendor": "腾讯·Token",
+    "plan": "Lite",
+    "action": "https://cloud.tencent.com/act/pro/tokenplan",
+    "firstMonthPrice": "-",
+    "monthlyPrice": 39,
+    "quarterlyPrice": "-",
+    "yearlyPrice": "-",
+    "models": [
+      "HY-2.0",
+      "HY-T1",
+      "GLM-5",
+      "Kimi-K2.5",
+      "MiniMax-M2.5"
+    ],
+    "fiveHoursRequests": "无限制",
+    "weeklyRequests": "无限制",
+    "monthlyRequests": "无限制",
+    "benefits": [],
+    "note": "注意此为TokenPlan，而非CodingPlan。35M(3500万) Tokens 额度，约 70 轮问答"
+  },
+  {
+    "vendor": "腾讯·Token",
+    "plan": "Standard",
+    "action": "https://cloud.tencent.com/act/pro/tokenplan",
+    "firstMonthPrice": "-",
+    "monthlyPrice": 99,
+    "quarterlyPrice": "-",
+    "yearlyPrice": "-",
+    "models": [
+      "HY-2.0",
+      "HY-T1",
+      "GLM-5",
+      "Kimi-K2.5",
+      "MiniMax-M2.5"
+    ],
+    "fiveHoursRequests": "无限制",
+    "weeklyRequests": "无限制",
+    "monthlyRequests": "无限制",
+    "benefits": [],
+    "note": "注意此为TokenPlan，而非CodingPlan。100M(1亿) Tokens 额度，可执行约 200 轮问答"
+  },
+  {
+    "vendor": "腾讯·Token",
+    "plan": "Pro",
+    "action": "https://cloud.tencent.com/act/pro/tokenplan",
+    "firstMonthPrice": "-",
+    "monthlyPrice": 299,
+    "quarterlyPrice": "-",
+    "yearlyPrice": "-",
+    "models": [
+      "HY-2.0",
+      "HY-T1",
+      "GLM-5",
+      "Kimi-K2.5",
+      "MiniMax-M2.5"
+    ],
+    "fiveHoursRequests": "无限制",
+    "weeklyRequests": "无限制",
+    "monthlyRequests": "无限制",
+    "benefits": [],
+    "note": "注意此为TokenPlan，而非CodingPlan。320M(3.2亿) Tokens 额度"
+  },
+  {
+    "vendor": "腾讯·Token",
+    "plan": "Max",
+    "action": "https://cloud.tencent.com/act/pro/tokenplan",
+    "firstMonthPrice": "-",
+    "monthlyPrice": 599,
+    "quarterlyPrice": "-",
+    "yearlyPrice": "-",
+    "models": [
+      "HY-2.0",
+      "HY-T1",
+      "GLM-5",
+      "Kimi-K2.5",
+      "MiniMax-M2.5"
+    ],
+    "fiveHoursRequests": "无限制",
+    "weeklyRequests": "无限制",
+    "monthlyRequests": "无限制",
+    "benefits": [],
+    "note": "注意此为TokenPlan，而非CodingPlan。650M(6.5亿) Tokens 额度"
+  },
+  {
+    "vendor": "百度·千帆",
+    "plan": "Lite",
+    "action": "https://cloud.baidu.com/product/codingplan.html",
+    "firstMonthPrice": "-",
+    "monthlyPrice": 40,
+    "quarterlyPrice": "-",
+    "yearlyPrice": "-",
+    "models": [
+      "GLM-5",
+      "Kimi-K2.5",
+      "MiniMax-M2.5",
+      "DeepSeek-V3.2"
+    ],
+    "fiveHoursRequests": 1200,
+    "weeklyRequests": 9000,
+    "monthlyRequests": 18000,
+    "benefits": [],
+    "note": "使用 https://console.bce.baidu.com/qianfan/resource/subscribe 链接可以获得百度搜索额度，支持Baidu Search Skill"
+  },
+  {
+    "vendor": "百度·千帆",
+    "plan": "Pro",
+    "action": "https://cloud.baidu.com/product/codingplan.html",
+    "firstMonthPrice": "-",
+    "monthlyPrice": 200,
+    "quarterlyPrice": "-",
+    "yearlyPrice": "-",
+    "models": [
+      "GLM-5",
+      "Kimi-K2.5",
+      "MiniMax-M2.5",
+      "DeepSeek-V3.2"
+    ],
+    "fiveHoursRequests": 6000,
+    "weeklyRequests": 45000,
+    "monthlyRequests": 90000,
+    "benefits": [],
+    "note": "使用 https://console.bce.baidu.com/qianfan/resource/subscribe 链接可以获得百度搜索额度，支持Baidu Search Skill"
+  },
+  {
+    "vendor": "京东云",
+    "plan": "Lite",
+    "action": "https://www.jdcloud.com/cn/pages/codingplan",
+    "firstMonthPrice": 7.9,
+    "monthlyPrice": 40,
+    "quarterlyPrice": "-",
+    "yearlyPrice": "-",
+    "models": [
+      "Kimi-K2.5",
+      "GLM-5",
+      "MiniMax-M2.5",
+      "DeepSeek-V3.2",
+      "Qwen3-Coder"
+    ],
+    "fiveHoursRequests": 1200,
+    "weeklyRequests": 9000,
+    "monthlyRequests": 18000,
+    "benefits": [],
+    "note": ""
+  },
+  {
+    "vendor": "京东云",
+    "plan": "Pro",
+    "action": "https://www.jdcloud.com/cn/pages/codingplan",
+    "firstMonthPrice": 39.9,
+    "monthlyPrice": 200,
+    "quarterlyPrice": "-",
+    "yearlyPrice": "-",
+    "models": [
+      "Kimi-K2.5",
+      "GLM-5",
+      "MiniMax-M2.5",
+      "DeepSeek-V3.2",
+      "Qwen3-Coder"
+    ],
+    "fiveHoursRequests": 6000,
+    "weeklyRequests": 45000,
+    "monthlyRequests": 90000,
+    "benefits": [],
+    "note": ""
+  },
+  {
+    "vendor": "Kimi",
+    "plan": "Andante",
+    "action": "https://www.kimi.com/code",
+    "firstMonthPrice": "-",
+    "monthlyPrice": 49,
+    "quarterlyPrice": "-",
+    "yearlyPrice": 468,
+    "models": [
+      "Kimi-K2.5",
+      "Kimi-K2"
+    ],
+    "fiveHoursRequests": "未公开",
+    "weeklyRequests": "未公开",
+    "monthlyRequests": "未公开",
+    "benefits": [],
+    "note": "Agent 4 倍速"
+  },
+  {
+    "vendor": "Kimi",
+    "plan": "Moderato",
+    "action": "https://www.kimi.com/code",
+    "firstMonthPrice": "-",
+    "monthlyPrice": 99,
+    "quarterlyPrice": "-",
+    "yearlyPrice": 948,
+    "models": [
+      "Kimi-K2.5",
+      "Kimi-K2"
+    ],
+    "fiveHoursRequests": "未公开",
+    "weeklyRequests": "未公开",
+    "monthlyRequests": "未公开",
+    "benefits": [],
+    "note": "4 倍额度, Agent 多任务并行"
+  },
+  {
+    "vendor": "Kimi",
+    "plan": "Allegretto",
+    "action": "https://www.kimi.com/code",
+    "firstMonthPrice": "-",
+    "monthlyPrice": 199,
+    "quarterlyPrice": "-",
+    "yearlyPrice": 1908,
+    "models": [
+      "Kimi-K2.5",
+      "Kimi-K2"
+    ],
+    "fiveHoursRequests": "未公开",
+    "weeklyRequests": "未公开",
+    "monthlyRequests": "未公开",
+    "benefits": [
+      "免费Kimi-Claw"
+    ],
+    "note": "20 倍额度"
+  },
+  {
+    "vendor": "Kimi",
+    "plan": "Allegro",
+    "action": "https://www.kimi.com/code",
+    "firstMonthPrice": "-",
+    "monthlyPrice": 699,
+    "quarterlyPrice": "-",
+    "yearlyPrice": 6708,
+    "models": [
+      "Kimi-K2.5",
+      "Kimi-K2"
+    ],
+    "fiveHoursRequests": "未公开",
+    "weeklyRequests": "未公开",
+    "monthlyRequests": "未公开",
+    "benefits": [
+      "免费Kimi-Claw"
+    ],
+    "note": "60 倍额度"
+  },
+  {
+    "vendor": "摩尔线程",
+    "plan": "Lite",
+    "action": "https://code.mthreads.com/",
+    "firstMonthPrice": "-",
+    "monthlyPrice": 40,
+    "quarterlyPrice": 120,
+    "yearlyPrice": "-",
+    "models": [
+      "GLM-4.7"
+    ],
+    "fiveHoursRequests": 1200,
+    "weeklyRequests": 9000,
+    "monthlyRequests": 18000,
+    "benefits": [
+      "国产GPU算力"
+    ],
+    "note": "• 仅支持季度付费，¥120/季\n• 基于MTT S5000国产GPU，硅基流动推理加速"
+  },
+  {
+    "vendor": "摩尔线程",
+    "plan": "Pro",
+    "action": "https://code.mthreads.com/",
+    "firstMonthPrice": "-",
+    "monthlyPrice": 200,
+    "quarterlyPrice": 600,
+    "yearlyPrice": "-",
+    "models": [
+      "GLM-4.7"
+    ],
+    "fiveHoursRequests": 6000,
+    "weeklyRequests": 45000,
+    "monthlyRequests": 90000,
+    "benefits": [
+      "国产GPU算力"
+    ],
+    "note": "• 仅支持季度付费，¥600/季\n• Lite用量的5倍"
+  },
+  {
+    "vendor": "摩尔线程",
+    "plan": "Max",
+    "action": "https://code.mthreads.com/",
+    "firstMonthPrice": "-",
+    "monthlyPrice": 400,
+    "quarterlyPrice": 1200,
+    "yearlyPrice": "-",
+    "models": [
+      "GLM-4.7"
+    ],
+    "fiveHoursRequests": 24000,
+    "weeklyRequests": 180000,
+    "monthlyRequests": 360000,
+    "benefits": [
+      "国产GPU算力",
+      "优先保障"
+    ],
+    "note": "• 仅支持季度付费，¥1200/季\n• Pro用量的4倍，优先保障资源"
+  },
+  {
+    "vendor": "快手·KwaiKAT",
+    "plan": "Mini",
+    "action": "https://www.streamlake.com/marketing/coding-plan",
+    "firstMonthPrice": 8.8,
+    "monthlyPrice": 29,
+    "quarterlyPrice": "-",
+    "yearlyPrice": "-",
+    "models": [
+      "KAT-Coder-Pro V1"
+    ],
+    "fiveHoursRequests": 40,
+    "weeklyRequests": "-",
+    "monthlyRequests": "-",
+    "benefits": [],
+    "note": "• 以Prompts计量，1 Prompt≈15次模型调用\n• 自研KAT-Coder-Pro V1模型"
+  },
+  {
+    "vendor": "快手·KwaiKAT",
+    "plan": "Starter",
+    "action": "https://www.streamlake.com/marketing/coding-plan",
+    "firstMonthPrice": 48,
+    "monthlyPrice": 70,
+    "quarterlyPrice": "-",
+    "yearlyPrice": "-",
+    "models": [
+      "KAT-Coder-Pro V1"
+    ],
+    "fiveHoursRequests": 100,
+    "weeklyRequests": "-",
+    "monthlyRequests": "-",
+    "benefits": [],
+    "note": "• 以Prompts计量\n• 自研KAT-Coder-Pro V1模型"
+  },
+  {
+    "vendor": "快手·KwaiKAT",
+    "plan": "Pro",
+    "action": "https://www.streamlake.com/marketing/coding-plan",
+    "firstMonthPrice": 96,
+    "monthlyPrice": 140,
+    "quarterlyPrice": "-",
+    "yearlyPrice": "-",
+    "models": [
+      "KAT-Coder-Pro V1"
+    ],
+    "fiveHoursRequests": 300,
+    "weeklyRequests": "-",
+    "monthlyRequests": "-",
+    "benefits": [],
+    "note": "• 以Prompts计量\n• 自研KAT-Coder-Pro V1模型"
+  },
+  {
+    "vendor": "快手·KwaiKAT",
+    "plan": "Max",
+    "action": "https://www.streamlake.com/marketing/coding-plan",
+    "firstMonthPrice": 240,
+    "monthlyPrice": 350,
+    "quarterlyPrice": "-",
+    "yearlyPrice": "-",
+    "models": [
+      "KAT-Coder-Pro V1"
+    ],
+    "fiveHoursRequests": 1000,
+    "weeklyRequests": "-",
+    "monthlyRequests": "-",
+    "benefits": [],
+    "note": "• 以Prompts计量\n• 自研KAT-Coder-Pro V1模型"
+  },
+  {
+    "vendor": "无问芯穹",
+    "plan": "Lite",
+    "action": "https://cloud.infini-ai.com/login?redirect=/genstudio/invitation&invite_code=BqXMhzFY",
+    "firstMonthPrice": 19.9,
+    "monthlyPrice": 40,
+    "quarterlyPrice": "-",
+    "yearlyPrice": "-",
+    "models": [
+      "Kimi-K2.5",
+      "MiniMax-M2.7",
+      "MiniMax-M2.5",
+      "DeepSeek-V3.2-Thinking",
+      "GLM-5"
+    ],
+    "fiveHoursRequests": 1000,
+    "weeklyRequests": 6000,
+    "monthlyRequests": 12000,
+    "benefits": [],
+    "note": "• 聚合型平台，一份订阅多厂商模型\n• 5小时1000次，7天6000次，30天12000次\n• 暂时售罄"
+  },
+  {
+    "vendor": "无问芯穹",
+    "plan": "Pro",
+    "action": "https://cloud.infini-ai.com/login?redirect=/genstudio/invitation&invite_code=BqXMhzFY",
+    "firstMonthPrice": "-",
+    "monthlyPrice": 200,
+    "quarterlyPrice": "-",
+    "yearlyPrice": "-",
+    "models": [
+      "Kimi-K2.5",
+      "MiniMax-M2.7",
+      "MiniMax-M2.5",
+      "DeepSeek-V3.2-Thinking",
+      "GLM-5"
+    ],
+    "fiveHoursRequests": 5000,
+    "weeklyRequests": 30000,
+    "monthlyRequests": 60000,
+    "benefits": [],
+    "note": "• 聚合型平台，一份订阅多厂商模型\n• 5倍Lite用量\n• 暂时售罄"
+  }
+]
