@@ -34,54 +34,16 @@ function formatStrikethrough(price, originalPrice) {
     return formatPrice(price);
 }
 
-// 清理表格单元格内容（移除换行符，防止破坏表格格式）
+// 清理表格单元格内容
 function escapeTableCell(text) {
     if (!text) return '-';
     return String(text).replace(/\n/g, ' ').trim() || '-';
 }
 
-// 计算原始价格（包月×3 或 包月×12）
+// 计算原始价格
 function getOriginalPrice(currentPrice, multiplier) {
     if (currentPrice === '-' || typeof currentPrice !== 'number') return null;
     return currentPrice * multiplier;
-}
-
-// 生成平台客观对比表
-function generatePlatformInfo(platformInfo) {
-    if (!platformInfo || !platformInfo.platforms) return '';
-
-    const dims = platformInfo.dimensions || [];
-    const platforms = platformInfo.platforms || [];
-
-    let md = `## 平台客观对比维度\n\n`;
-    md += `以下对比基于各平台公开信息和用户反馈，仅供参考。\n\n`;
-
-    // 表头
-    md += `| 平台 |`;
-    dims.forEach(dim => {
-        md += ` ${dim.name} |`;
-    });
-    md += `\n`;
-
-    // 分隔线
-    md += `|------|`;
-    dims.forEach(() => {
-        md += `------|`;
-    });
-    md += `\n`;
-
-    // 数据行
-    platforms.forEach(platform => {
-        md += `| ${platform.name} |`;
-        md += ` ${platform.priceLevel} |`;
-        md += ` ${platform.purchaseDifficulty} |`;
-        md += ` ${platform.stability} |`;
-        md += ` ${platform.codingAbility} |`;
-        md += ` ${platform.textAbility} |`;
-        md += `\n`;
-    });
-
-    return md + '\n';
 }
 
 // 生成套餐对比表
@@ -117,7 +79,6 @@ function generateTable(plans) {
 // 生成完整 README
 function generateReadme() {
     const { notes } = config;
-    const platformInfo = config.platformInfo;
 
     let md = `# AI Coding Plan 对比工具
 
@@ -131,8 +92,6 @@ ${config.header.models}
 
 直接访问：[${ONLINE_URL}](${ONLINE_URL})
 
-
-${generatePlatformInfo(platformInfo)}
 ## 📋 套餐对比表
 
 ${generateTable(plans)}
@@ -157,7 +116,6 @@ ${notes.map(n => `- ${n}`).join('\n')}
 function main() {
     const readme = generateReadme();
 
-    // 直接输出到 README.md
     const outputPath = path.join(__dirname, '../README.md');
     fs.writeFileSync(outputPath, readme, 'utf8');
 
