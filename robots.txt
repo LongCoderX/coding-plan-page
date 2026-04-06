@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://longcoderx.github.io/coding-plan-page/sitemap.xml
