@@ -405,15 +405,49 @@
       section{padding:56px 0}
       th,td{padding:12px 14px;font-size:.8rem}
     }
+    @media(max-width:768px){
+      .table-scroll{overflow-x:auto;-webkit-overflow-scrolling:touch}
+      .table-scroll table{min-width:800px}
+      .table-wrapper{border-radius:8px}
+      th,td{padding:10px 12px;font-size:.75rem}
+      .action-btn{padding:6px 12px;font-size:.75rem}
+      .model-tag{margin-bottom:2px}
+      .benefit{margin-bottom:2px}
+    }
     @media(max-width:640px){
-      .container{padding:0 16px}
-      .hero h1{font-size:1.8rem}
-      .hero-sub{font-size:.95rem}
-      .filter-bar{gap:8px}
+      .container{padding:0 12px}
+      .hero{padding-top:120px}
+      .hero h1{font-size:1.6rem}
+      .hero-sub{font-size:.85rem}
+      .hero-stats{gap:16px}
+      .hero-stat .num{font-size:1.5rem}
+      .filter-bar{gap:6px}
+      .filter-btn{padding:8px 12px;font-size:.8rem;min-height:40px}
+      .reset-btn{padding:8px 12px;font-size:.8rem;min-height:40px}
       .dropdown-menu{
         position:fixed;left:50%!important;top:50%!important;
         transform:translate(-50%,-50%);min-width:280px;max-width:calc(100vw-48px);
       }
+      .section-header h2{font-size:1.4rem}
+      .table-scroll table{min-width:700px}
+      th,td{padding:8px 10px;font-size:.7rem;white-space:nowrap}
+      td.sticky-first,th.sticky-first{width:70px;min-width:70px}
+      td.sticky-second,th.sticky-second{width:60px;min-width:60px}
+      td.sticky-third,th.sticky-third{width:80px;min-width:80px}
+      .action-btn{padding:5px 10px;font-size:.7rem;white-space:nowrap}
+      .vendor-name,.plan-name{font-size:.8rem!important}
+      .price{font-size:.75rem}
+      .model-tag,.benefit{font-size:.65rem;padding:2px 6px}
+      .note{font-size:.7rem}
+      .sticky-first,.sticky-second,.sticky-third{box-shadow:2px 0 4px rgba(0,0,0,.3)}
+    }
+    @media(max-width:480px){
+      .hero-stats{flex-direction:column;gap:12px}
+      .hero{padding-top:100px;padding-bottom:40px}
+      section{padding:40px 0}
+      .table-scroll table{min-width:600px}
+      th,td{padding:6px 8px;font-size:.65rem}
+      .vendor-name,.plan-name{font-size:.75rem!important}
     }
     </style>
 </head>
