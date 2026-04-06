@@ -1188,12 +1188,14 @@ function updateStickyColumns() {
     cell.style.left = '0px';
   });
 
+  let secondWidth = 0;
   secondCells.forEach(cell => {
+    secondWidth = Math.max(secondWidth, cell.offsetWidth);
     cell.style.left = firstWidth + 'px';
   });
 
   thirdCells.forEach(cell => {
-    cell.style.left = (firstWidth * 2 + 4) + 'px';
+    cell.style.left = (firstWidth + secondWidth) + 'px';
   });
 }
 
